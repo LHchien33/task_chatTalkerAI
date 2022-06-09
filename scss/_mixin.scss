@@ -1,0 +1,49 @@
+/* 主要斷點 */
+
+//以上大螢幕
+@mixin pc-1199{
+    @media (max-width: 1199px){
+        @content;
+    }
+}
+
+//中螢幕，以下直式LCD或橫放平板
+@mixin pc-991{
+    @media (max-width: 991px){
+        @content;
+    }
+}
+
+//中小螢幕，以下小平板或手機
+@mixin mobile-767{
+    @media (max-width: 767px){
+        @content;
+    }
+}
+
+
+/* 微調斷點 */
+
+@mixin pc-1440{
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin pc-1536 {
+    @media (min-width: 1536px) {
+        @content;
+    }
+}
+
+@mixin pc-1920 {
+    @media (min-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin pc-2560{
+    @media (min-width: 2560px) {
+        @content;
+    }
+}
