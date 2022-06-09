@@ -47,3 +47,9 @@
         @content;
     }
 }
+
+@mixin mobile-374{
+    @media (max-width: 374px) {
+        @content;
+    }
+}

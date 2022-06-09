@@ -179,6 +179,10 @@
                 position: absolute;
                 left: -10px;
                 bottom: 0;
+                @include mobile-374{
+                    width: 100%;
+                    left: 0;
+                }
             }
         }
         .logo{

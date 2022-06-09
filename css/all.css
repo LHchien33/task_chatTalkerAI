@@ -488,6 +488,13 @@ a {
   }
 }
 
+@media (max-width: 767px) and (max-width: 374px) {
+  .header-navbar::before {
+    width: 100%;
+    left: 0;
+  }
+}
+
 .header-navbar .logo {
   display: block;
   width: 218px;
