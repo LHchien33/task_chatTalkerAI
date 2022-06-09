@@ -1269,6 +1269,13 @@ a {
   left: -1.5rem;
 }
 
+@media (max-width: 767px) {
+  .programs .plan-title::before {
+    width: calc(100% + 2rem);
+    left: -1rem;
+  }
+}
+
 .programs .plan-brief {
   padding: 2rem 0;
 }

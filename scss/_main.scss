@@ -706,6 +706,10 @@
                 position: absolute;
                 bottom: 0;
                 left: -1.5rem;
+                @include mobile-767{
+                    width: calc(100% + 2rem);
+                    left: -1rem;
+                }
             }
         }
         &-brief{
