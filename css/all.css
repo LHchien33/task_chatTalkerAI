@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* color */
-/* font size */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,13 +53,11 @@ table {
   border-spacing: 0;
 }
 
-/* 主要斷點 */
-/* 微調斷點 */
 /* 基本設定 */
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid #000;
+  /* outline: 1px solid #000; */
 }
 
 body {
@@ -233,7 +229,6 @@ a {
   }
 }
 
-/* 各頁共用樣式 */
 .scroll-to-top {
   width: 71px;
   height: 71px;
