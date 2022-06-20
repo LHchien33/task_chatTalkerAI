@@ -1,0 +1,101 @@
+/* 各頁共用樣式 */
+.scroll-to-top {
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  position: fixed;
+  right: 3rem;
+  bottom: 1.5rem;
+  z-index: 100;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/top.svg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  @include pc-991 {
+    width: 60px;
+    height: 60px;
+    right: 2rem;
+  }
+
+  @include mobile-767 {
+    width: 50px;
+    height: 50px;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.bg-balls {
+  position: absolute;
+  /* width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; */
+  left: 0;
+  right: 0;
+  z-index: -1;
+  .pos-a_bgr-n_bgs-cv {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.header-navbar {
+  @include mobile-767 {
+    border-bottom: 2px solid $c-decor-yellow;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include mobile-767 {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .logo {
+      display: block;
+      width: 218px;
+      height: 40px;
+      background-image: url(../images/logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden;
+      @include mobile-767 {
+        width: 130px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.banner {
+  &-title {
+    font-size: $fz-xxxl;
+    @include pc-991 {
+      font-size: $fz-xxxl - 0.5rem;
+    }
+    @include mobile-767 {
+      font-size: $fz-xxl;
+    }
+  }
+  &-subtitle {
+    font-size: $fz-l;
+    @include pc-991 {
+      font-size: $fz-d;
+    }
+  }
+}
+
+.copyright {
+  background: $c-blockGray;
+  padding: 1rem 0;
+}

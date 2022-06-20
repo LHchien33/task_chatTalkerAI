@@ -1,5 +1,9 @@
 @import "variable";
 @import "reset";
-@import "mixin";
+
+@import "breakpoints";
 @import "base";
-@import "main";
+@import "layout";
+
+@import "pages/index";
+@import "pages/charge";

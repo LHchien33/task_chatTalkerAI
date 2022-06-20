@@ -1,0 +1,257 @@
+.c-ball-yellow {
+  width: 7%;
+  height: 361px;
+  margin-top: 867px;
+  background-image: url(../images/ball03.svg);
+  background-position: right 0;
+  background-size: cover;
+  @include pc-1536 {
+    width: 15%;
+    background-size: contain;
+    left: 50px;
+    margin-top: 1180px;
+  }
+  @include pc-1199 {
+    width: 10%;
+    height: 250px;
+    margin-top: 1180px;
+  }
+  @include pc-991 {
+    height: 204px;
+  }
+  @include mobile-767 {
+    width: 25.6%;
+    margin-top: 1236px;
+  }
+}
+
+.c-header{
+  height: 72.8vh;
+  background-image: url(../images/banner.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  position: relative;
+  @include mobile-575{
+      height: 85vh;
+      background-image: none;
+  }
+  .header-banner{
+      display: block;
+      padding-top: 92px;
+      @include mobile-575{
+          background-image: url(../images/banner_sm.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: right bottom;
+      }
+  }
+  .banner-intro{
+      margin: 0 auto;
+  }
+  .banner-gray{
+      width: 100%;
+      height: 61.2vh;
+      background-color: $c-banner-gray;
+      border-radius: 0 0 0 300px;
+      position: absolute;
+      top: 0%;
+      z-index: -1;
+      @include mobile-575{
+          top: 72px;
+      }
+  }
+}
+
+.programs{
+  &-title{
+      font-size: $fz-xxl;
+      margin-top: 11px;
+      @include pc-991{
+          font-size: 1.75rem;
+      }
+  }
+  &-btns{
+      display: flex;
+      justify-content: space-between;
+      max-width: 736px;
+      margin: 0 auto;
+      margin-bottom: 54px;
+      overflow-x: auto;
+      @include mobile-767{
+          max-width: 544px;
+      }
+      .btn-l{
+          font-size: $fz-m;
+          white-space: nowrap;
+          @include mobile-767{
+              padding: 7px 15px;
+              border-radius: 27px;
+              margin-right: 6px;
+          }
+          span{
+              font-family: "Comfortaa";
+          }
+      }
+  }
+  &-showcase{
+      width: 83.5%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      @include pc-991{
+          width: 75%;
+          margin-bottom: -1.5rem;
+      }
+      @include mobile-767{
+          width: 85%;
+      }
+      @include mobile-575{
+          width: 100%;
+      }
+  }
+  .plan{
+      width: 48.8%;
+      /* padding: 1rem 1.5rem 2rem; */
+      @include pc-991{
+          width: 100%;
+          margin-bottom: 1.5rem;
+      }
+      /* @include mobile-767{
+          padding: 1rem 1rem 1.5rem;
+      } */
+      &-body{
+          padding: 2rem 1.5rem;
+          @include mobile-575{
+              padding: 1.5rem 1rem;
+          }
+      }
+      &-title{
+          font-size: $fz-xl;
+          padding: 1rem 0;
+          position: relative;
+          border-bottom: 1px solid $c-decor-gray;
+      }
+      &-brief{
+          margin-bottom: 2rem;
+      }
+      &-calc{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 2rem;
+          .userAmount{
+              min-width: 42.7%;
+              @include mobile-767{
+                  min-width: 45.8%;
+              }
+              .number{
+                  color: $c-primary;
+              }
+          }
+          .charge{
+              min-width: 42.7%;
+              @include mobile-767{
+                  min-width: 45.8%;
+              }
+          }
+          .equal{
+              font-size: 29px;
+              text-align: center;
+          }
+          .caption{
+              font-size: $fz-xs;
+              text-align: center;
+              padding-bottom: 0.75rem;
+          }
+          .number{
+              text-align: center;
+              span{
+                  font-size: $fz-xxl;
+                  font-family: "Comfortaa";
+                  @include mobile-767{
+                      font-size: 1.75rem;
+                  }
+              }
+              sub{
+                  font-size: $fz-xs;
+                  margin-left: 0.5rem;
+              }
+          }
+          
+      }
+      &-content{
+          margin-bottom: 2rem;
+          li{
+              padding-left: 32.5px;
+              margin-bottom: 1rem;
+              background-image: url(../images/icon_check.svg);
+              background-repeat: no-repeat;
+              background-position: 0 center;
+              background-size: 19px auto;
+              @include mobile-767{
+                  font-size: 0.875rem;
+                  padding-left: 2rem;
+                  background-size: 16px auto;
+                  background-position: 0 4px;
+              }
+          }
+      }
+      .btn{
+          max-width: 136px;
+          margin: 0 auto;
+      }
+  }
+}
+
+.FAQ{
+  .collapse-list{
+      width: 83%;
+      margin: 0 auto;
+      @include mobile-767{
+          width: 100%;
+      }
+  }
+  &-title{
+      font-size: $fz-xxl;
+      @include mobile-767{
+          font-size: 1.75rem;
+      }
+  }
+  .list-items{
+      margin-bottom: 1rem;
+  }
+  .click-area{
+      display: block;
+      padding: 1rem 2rem;
+      @include mobile-767{
+          padding: 1rem;
+      }
+  }
+  .question{
+      font-size: $fz-m;
+      background-image: url(../images/icon_plus.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+      @include mobile-767{
+          font-size: $fz-d;
+          background-size: 16px auto;
+      }
+      &--active{
+          color: $c-primary;
+          background-image: url(../images/icon_minus.svg);
+          @include mobile-767{
+              background-size: 16px auto;
+          }
+      }
+  }
+  .answer{
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+      @include mobile-767{
+          padding-top: 1rem;
+          padding-bottom: 0.5rem;
+      }
+  }
+}

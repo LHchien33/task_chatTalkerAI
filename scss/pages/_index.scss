@@ -1,0 +1,480 @@
+.bg-balls{
+  .ball-blue {
+    left: 0;
+    width: 10.1%;
+    max-width: 360px;
+    margin-top: 589px;
+    height: 360px;
+    background-image: url(../images/ball01.svg);
+    background-position: right;
+    @include pc-1536 {
+      width: 14%;
+      margin-top: 768 - 180px;
+    }
+    @include pc-1920 {
+      width: 20%;
+      left: 16px;
+    }
+    @include mobile-767 {
+      width: 13%;
+      height: 126px;
+      margin-top: calc(100vh + 60px);
+    }
+  }
+  .ball-lightblue {
+    right: 0;
+    width: 15.4%;
+    max-width: 310px;
+    margin-top: 1694px;
+    height: 310px;
+    background-image: url(../images/ball02.svg);
+    background-position: left;
+    @include pc-1440 {
+      width: 19%;
+    }
+    @include pc-1536 {
+      width: 22%;
+      right: 32px;
+    }
+    @include pc-1199 {
+      margin-top: 2200px;
+    }
+    @include mobile-767 {
+      width: 23.5%;
+      max-width: 135px;
+      height: 135px;
+      margin-top: 3067px;
+    }
+  }
+
+  .ball-yellow {
+    left: 50px;
+    width: 150px;
+    margin-top: 2640px;
+    height: 150px;
+    background-image: url(../images/ball03.svg);
+    @include pc-1440 {
+      left: 82px;
+    }
+    @include pc-1536 {
+      left: 150px;
+    }
+    @include pc-1920 {
+      margin-top: 2620px;
+      left: 230px;
+    }
+    @include pc-1199 {
+      margin-top: 3380px;
+    }
+    @include mobile-767 {
+      width: 20.5%;
+      height: 153px;
+      margin-top: 4800px;
+      left: 0;
+      background-position: right 0;
+    }
+  }
+}
+
+.header{
+  height: 100vh;
+  /* max-height: 768px; */
+  background-image: url(../images/bg_home.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  @include mobile-767{
+      background-image: none;
+  }
+  
+  &-banner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 30px;
+      @include mobile-767{
+          height: 84.4%;
+          flex-direction: column;
+      }
+      .banner{
+          &-intro{
+              margin-right: 2rem;
+              @include mobile-767{
+                  margin-right: 0;
+                  margin-bottom: 2rem;
+              }
+          }
+          &-brandName{
+              font-size: $fz-m;
+              color: $c-primary;
+              margin-bottom: 0.5rem;
+              @include pc-991{
+                  font-size: $fz-d;
+              }
+          }
+          &-image{
+              width: 45%;
+              @include mobile-767{
+                  width: 86%;
+                  margin: auto;
+                  background-image: url(../images/bg_home_sm.svg);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center bottom;
+              }
+          }
+      }
+      
+  }
+}
+
+.platform{
+  &-title{
+      font-size: $fz-xxl;
+      @include pc-991{
+          font-size: 1.75rem;
+      }
+  }
+  &-list{
+      display: flex;
+      justify-content: space-around;
+      @include pc-991{
+          width: 75%;
+          flex-direction: column;
+          margin: 0 auto;
+          margin-bottom: -1rem;
+      }
+      @include mobile-767{
+          width: 90%;
+      }
+  }
+  .list-items{
+      width: 30%;
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+      @include pc-991{
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 1rem;
+          text-align: left;
+          padding: 1rem;
+          &:nth-child(2){
+              justify-content: flex-end;
+          }
+      }
+      @include mobile-575{
+          display: block;
+          width: 100%;
+          padding: 0;
+          margin-bottom: 1.5rem;
+          text-align: center;
+      }
+  }
+  .item{
+      &-image{
+          max-width: 90px;
+          margin: 0 auto;
+          margin-bottom: 1.5rem;
+          @include pc-991{
+              max-width: 75px;
+              margin: 0 1.5rem 0 0;
+          }
+          @include mobile-575{
+              max-width: 60px;
+              margin: 0 auto;
+              margin-bottom: 1rem;
+          }
+      }
+      &-title{
+          font-size: $fz-xl;
+          margin-bottom: 1.5rem;
+          @include pc-991{
+              font-size: $fz-l;
+              margin-bottom: 0.5rem;
+          }
+          @include mobile-575{
+              font-size: $fz-m;
+              margin-bottom: 1rem;
+          }
+      }
+      &-content{
+          color: $c-content;
+      }
+  }
+}
+
+.customer{
+  &-title{
+      font-size: $fz-xxl;
+      @include pc-991{
+          font-size: 1.75rem;
+      }
+  }
+  &-subtitle{
+      font-size: $fz-l;
+      margin-bottom: 3rem;
+      @include mobile-767{
+          font-size: $fz-m;
+          margin-bottom: 2rem;
+      }
+  }
+  &-list{
+      display: flex;
+      justify-content: space-between;
+      @include pc-1199{
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-bottom: -1.5rem;
+      }
+      .list-items{
+          width: 23.9%;
+          padding-bottom: 1.5rem;
+          @include pc-1199{
+              width: 35%;
+              margin: 0 0.75rem;
+              margin-bottom: 1.5rem;
+          }
+          @include pc-991{
+              width: 40%;
+          }
+          @include mobile-575{
+              width: 77.6%;
+              margin: auto;
+              margin-bottom: 1.5rem;
+          }
+      }
+      .item{
+          &-image{
+              border-radius: 0.75rem 0.75rem 0 0;
+              margin-bottom: 1rem;
+          }
+          &-title{
+              color: $c-primary;
+          }
+          &-content{
+              padding: 0 1rem;
+          }
+      }
+  }
+
+}
+
+.particular{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @include pc-1199{
+      flex-direction: column;
+  }
+  &-intro{
+      margin: auto 0;
+      margin-right: 4.5%;
+      width: 36.3%;
+      @include pc-1199{
+          width: 100%;
+          text-align: center;
+          margin-bottom: 2rem;
+      }
+  }
+  .intro{
+      &-title{
+          font-size: $fz-xxl;
+          @include pc-991{
+              font-size: 1.75rem;
+          }
+      }
+      &-content{
+          margin-bottom: 1.5rem;
+          @include mobile-767{
+              margin-bottom: 1rem;
+          }
+      }
+  }
+  &-list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 46.6%;
+      margin-bottom: -1.75rem;
+      @include pc-1199{
+          width: 100%;
+          margin-bottom: -2.5rem;
+          justify-content: center;
+      }
+      @include mobile-575{
+          margin-bottom: -1.5rem;
+      }
+  }
+  .list-items{
+      width: 45.3%;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      @include pc-1199{
+          width: 30%;
+          margin: 0 1.5rem;
+          margin-bottom: 2.5rem;
+          text-align: center;
+          padding: 2rem 1.5rem;
+      }
+      @include mobile-767{
+          width: 40%;
+      }
+      @include mobile-575{
+          width: 68.7%;
+          padding: 2rem 1.5rem;
+          margin-bottom: 1.5rem;
+          text-align: left;
+      }
+      .item{
+          &-image{
+              max-width: 86px;
+              height: 86px;
+              margin-bottom: 1.5rem;
+              border-radius: 50%;
+              line-height: 86px;
+              text-align: center;
+              img{
+                  display: inline-block;
+                  vertical-align: middle;
+              }
+              @include pc-1199{
+                  margin: 0 auto 1.5rem;
+              }
+              @include mobile-575{
+                  margin: 0 0 1.5rem;
+              }
+          }
+          @include mobile-767{
+              &-title{
+                  font-size: $fz-m;
+                  margin-bottom: 1.25rem;
+              }
+          }
+          &-content{
+              margin-bottom: 1rem;
+          }
+      }
+  }
+  
+}
+
+.comment{
+  &-title{
+      font-size: $fz-xxl;
+      @include pc-991{
+          font-size: 1.75rem;
+      }
+  }
+  &-list{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 56px;
+      @include pc-1199{
+          justify-content: space-around;
+      }
+  }
+  .list-items{
+      width: 32.4%;
+      position: relative;
+      margin-bottom: 1.5rem;
+      padding: 1.5rem 2rem;
+      @include pc-1199{
+          width: 45%;
+          &:last-child{
+              display: none;
+          }
+      }
+      @include mobile-767{
+          width: 85%;
+          &:not(:first-child){
+              display: none;
+          }
+      }
+      @include mobile-575{
+          width: 100%;
+          padding: 1rem;
+          margin-top: 0;
+      }
+  }
+  .headShot{
+      max-width: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: -56px;
+      @include mobile-767{
+          left: 2rem;
+      }
+  }
+  .item{
+      &-content{
+          padding: 24px 0;
+          border-bottom: 1px solid $c-decor-gray;
+          margin-bottom: 1.5rem;
+          @include mobile-767{
+              padding-top: 2rem;
+              padding-bottom: 1rem;
+              margin-bottom: 1rem;
+          }
+      }
+      &-title{
+          padding-bottom: 0.5rem;
+      }
+  }
+  .stars{
+      display: flex;
+      position: absolute;
+      right: 1.75rem;
+      bottom: 1.5rem;
+      img{
+          height: 1rem;
+          margin-right: 0.5rem;
+      }
+      @include mobile-767{
+          right: 1.4rem;
+          bottom: 1.25rem;
+      }
+  }
+  &-indicator{
+      max-width: 70px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      .item{
+          display: block;
+          width: 10px;
+          height: 10px;
+          background: $c-decor-gray;
+          border-radius: 50%;
+          &--active{
+              width: 16px;
+              background: $c-decor-yellow;
+              border-radius: 25% / 50%;
+          }
+      }
+  }
+}
+
+.footer{
+  padding: 33.9vh 0 13vh;
+  background-image: url(../images/home_footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  @include mobile-767{
+      background-image: url(../images/footer_sm.svg);
+      background-size: 100% auto;
+      padding: 43.9vh 0 9vh;
+  }
+  &-title{
+      font-size: $fz-xxl;
+      margin-bottom: 3rem;
+      @include pc-991{
+          font-size: $fz-xl;
+      }
+      @include mobile-767{
+          margin-bottom: 1.5rem;
+      }
+  }
+}
